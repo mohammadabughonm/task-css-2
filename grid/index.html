@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body, .grid-container { height: 350px; margin: 0; 
+    padding: 50px;}
+
+.grid-container {
+  /* align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* gap: 0px 0px; */
+  grid-template-areas:
+    "top"
+    "r1"
+    "r2"
+    "r3"
+    "r4"
+    "r5"
+    "r6";
+}
+
+.top { grid-area: top;
+border: none;
+align-items: center; background-color: #77b5f3}
+
+
+.r1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r11 r12"
+    "r11 r12";
+  grid-area: r1;
+}
+
+.r11 { grid-area: r11;background-color: #77b5f3 }
+
+.r12 { grid-area: r12;background-color: #77b5f3 }
+
+.r2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r21 r22 r23"
+    "r21 r22 r23";
+  grid-area: r2;
+}
+
+.r21 { grid-area: r21;background-color: #77b5f3 }
+
+.r22 { grid-area: r22;background-color: #77b5f3 }
+
+.r23 { grid-area: r23; background-color: #77b5f3}
+
+.r3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r31 r32 r33 r34"
+    "r31 r32 r33 r34";
+  grid-area: r3;
+}
+
+.r31 { grid-area: r31;background-color: #77b5f3 }
+
+.r32 { grid-area: r32;background-color: #77b5f3 }
+
+.r33 { grid-area: r33;background-color: #77b5f3 }
+
+.r34 { grid-area: r34;background-color: #77b5f3 }
+
+.r4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r41 r42 r43 r44 r45"
+    "r41 r42 r43 r44 r45";
+  grid-area: r4;
+}
+
+.r41 { grid-area: r41;background-color: #77b5f3 }
+
+.r42 { grid-area: r42;background-color: #77b5f3 }
+
+.r43 { grid-area: r43;background-color: #77b5f3 }
+
+.r44 { grid-area: r44;background-color: #77b5f3 }
+
+.r45 { grid-area: r45;background-color: #77b5f3 }
+
+.r5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r51 r52 r53 r54 r55 r56"
+    "r51 r52 r53 r54 r55 r56";
+  grid-area: r5;
+}
+
+.r51 { grid-area: r51;background-color: #77b5f3 }
+
+.r52 { grid-area: r52;background-color: #77b5f3 }
+
+.r53 { grid-area: r53;background-color: #77b5f3 }
+
+.r54 { grid-area: r54;background-color: #77b5f3 }
+
+.r55 { grid-area: r55;background-color: #77b5f3 }
+
+.r56 { grid-area: r56;background-color: #77b5f3 }
+
+.r6 { grid-area: r6;background-color: #77b5f3 }
+
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  border-radius: 15px;
+  border: 2px solid white;
+  position: relative;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: #77b5f3; */
+  text-align: center;
+  gap: 5px;
+  hi
+  
+}
+
+/* .grid-container after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="top">60 GS is starter kit for CSS Grid </div>
+    <div class="r1">
+      <div class="r11">1</div>
+      <div class="r12">2</div>
+    </div>
+    <div class="r2">
+      <div class="r21">1</div>
+      <div class="r22">2</div>
+      <div class="r23">3</div>
+    </div>
+    <div class="r3">
+      <div class="r31">1</div>
+      <div class="r32">2</div>
+      <div class="r33">3</div>
+      <div class="r34">4</div>
+    </div>
+    <div class="r4">
+      <div class="r41">1</div>
+      <div class="r42">2</div>
+      <div class="r43">3</div>
+      <div class="r44">4</div>
+      <div class="r45">5</div>
+    </div>
+    <div class="r5">
+      <div class="r51">1</div>
+      <div class="r52">2</div>
+      <div class="r53">3</div>
+      <div class="r54">4</div>
+      <div class="r55">5</div>
+      <div class="r56">6</div>
+    </div>
+    <div class="r6">Because the number 60 is divdable by 2.3.4.5.and 6</div>
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+.bord{
+    background-color: rgb(13, 160, 13);
+    width: 1200px;
+    height: 700px;
+    position: relative;
+}
+.bord1{
+    position: absolute;
+    height:500px ;
+    width: 700px;
+    border: 20px solid rgb(243, 251, 4);
+    margin-top: 2cm;
+    margin-left: 7.5cm;
+}
+.bord2{
+    position: absolute;
+    height:250px;
+    width: 350px;
+    border: 20px solid rgb(243, 251, 4);
+    margin-top: 2cm;
+    margin-left: 3.6cm;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+
+}
+.bord3{
+    position: absolute;
+    margin-top: 2cm;
+    margin-left: 2.5cm;
+}

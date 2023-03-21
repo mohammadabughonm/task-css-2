@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.t1{
+    background-color: rgb(56, 51, 51);
+    width: 100%;
+    height: 100px;
+}
+.t3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 400px;
+      width: 90%;
+    gap: 5px;
+}
+.t4{
+    border: 3px solid black;
+}
+
+@media only screen and (max-width:748px){
+    .t3{
+        grid-template-columns: repeat(2,1fr
+        );
+    }
+    .t1 div {
+     margin-left: 30%;
+    }
+
+}
+@media only screen and (max-width:644px){
+    .t3{
+        grid-template-columns: repeat(1,1fr
+        );
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="t1" style="display: flex;">
+      <h2 style="color: white;padding: 2%;"><i>My Website</i></h2>
+   <div style="color: white; margin-left: 70%;padding: 3%;">
+     link 1
+     link 2
+     link 3
+   </div>
+ 
+   </div>
+   <div class="t2" style="display: flex;">
+    <div style="width: 70%;">
+        <h2>This is the main heading</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam quam, vel atque ipsam rerum ipsa alias culpa veritatis sint illo veniam corporis, delectus aliquam natus dolore similique omnis asperiores.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam quam, vel atque ipsam rerum ipsa alias culpa veritatis sint illo veniam corporis, delectus aliquam natus dolore similique omnis asperiores.</p>
+      
+       <div class="t3">
+              <div class="t4">
+                    <div style="background-color: rgb(56, 51, 51);height: 50px;color: white;font-size: 1.5em;">Card One</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae fugiat hic perferendis, ipsam, mollitia officia nulla quo vel ut aperiam qui impedit ipsum quisquam dolorum quia! Natus, modi quod!
+                    </div>
+              </div>
+              <div class="t4">
+                <div style="background-color: rgb(56, 51, 51);height: 50px;color: white;font-size: 1.5em;">Card Two</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae fugiat hic perferendis, ipsam, mollitia officia nulla quo vel ut aperiam qui impedit ipsum quisquam dolorum quia! Natus, modi quod!
+                    </div>
+              </div>
+              <div class="t4">
+                <div style="background-color: rgb(56, 51, 51);height: 50px;color: white;font-size: 1.5em;">Card Three</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae fugiat hic perferendis, ipsam, mollitia officia nulla quo vel ut aperiam qui impedit ipsum quisquam dolorum quia! Natus, modi quod!
+                    </div>
+              </div>
+              <div class="t4">
+                <div style="background-color: rgb(56, 51, 51);height: 50px;color: white;font-size: 1.5em;">Card Four</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae fugiat hic perferendis, ipsam, mollitia officia nulla quo vel ut aperiam qui impedit ipsum quisquam dolorum quia! Natus, modi quod!
+                    </div>
+              </div>
+              <div class="t4">
+                <div style="background-color: rgb(56, 51, 51);height: 50px;color: white;font-size: 1.5em;">Card Five</div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae fugiat hic perferendis, ipsam, mollitia officia nulla quo vel ut aperiam qui impedit ipsum quisquam dolorum quia! Natus, modi quod!
+                    </div>
+              </div>
+       </div>
+    </div>
+    <div style="width: 30%;background-color:rgb(56, 51, 51);height: 500px;margin-top: 3%;color: white; padding: 2%;">
+     Lorem ipsum dolor sit amet, consectetur adipisiae accusamus sint.
+    </div>
+    </div>
+</body>
+</html>

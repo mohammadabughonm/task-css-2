@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/3d0e11c16d.js" crossorigin="anonymous"></script>
+   <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+         
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #00adbc;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+/* .mean{
+    display: flex;
+    flex-wrap: wrap; */
+/* } */
+.supre{
+    height: 500px;
+    width: 100%;
+    background-image: url(Screenshot\ 2023-03-20\ 124111.png) ;
+    text-align: center;
+    
+}
+.second{
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    color:#4d575f ;
+}
+.box5{
+    /* background-color: #00adbc; */
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 1px;
+    padding: 2%;
+    margin: 0% 5%;
+    /* justify-content: flex-start; */
+}
+.number{
+    height: 100px;
+    width: 15%;
+    text-align: center;
+    /* background-color:#44769f; */
+}
+/* .number-1{
+    width: 25%;
+} */
+.img1{
+    background-image: url(kide.png);
+}
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+}
+
+.end{
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+html,
+body{
+    height: 100%;
+    font-family: "Nunito Sans" , sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+p{
+    font-size: 15px;
+    font-family: "Nunito Sans" , sans-serif ;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left: 0;
+}
+
+input:focus{
+    outline: none;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+
+
+.footer{
+    background: #111111;
+    padding-top: 70px;
+}
+.footer-about{
+    margin-bottom: 30px;
+}
+.footer-about .footer-logo{
+    margin-bottom: 30px;
+}
+.footer-about p{
+    color: #b7b7b7;
+    margin-bottom: 30px;
+}
+.footer-widget{
+    margin-bottom: 30px;
+}
+.footer-widget h6{
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.footer-widget ul li{
+    line-height: 36px;
+    list-style: none;
+}
+.footer-widget ul li a{
+    color: #b7b7b7;
+    font-size: 15px;
+}
+.footer-widget ul li a:hover{
+    color: #e53637;
+}
+.footer-widget .footer-newslatter p{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form{
+    position: relative;
+}
+.footer-widget .footer-newslatter form input{
+    width: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button{
+    color: #b7b7b7;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+.footer-copyright-text{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer-copyright-text p{
+    color: #b7b7b7;f
+    margin-bottom: 0;
+}
+.footer-copyright-text p i{
+    color: #e53637;
+}
+.footer-copyright-text p a{
+    color: #e53637;
+}
+@media only screen and (max-width: 900px){
+    .third{
+        display:flex ;
+        flex-direction: column;
+        width: 100%;
+        /* flex-wrap: wrap; */
+        background-color: #00adbc;
+        height: 600px;
+        gap: 2px;
+        
+    }
+    .cards{
+        width: 40%;
+        height: 500px;
+    }
+    .box5{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 5%;
+        padding: 10%;
+        height: auto;
+        width: 100%;
+        background-color: white;
+    }
+.number{
+    width: 100%;
+    height: auto;
+}
+
+    
+
+
+}
+.third {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            /* justify-content: space-between; */
+            flex-wrap: wrap;
+
+        }
+
+        .cards {
+            width: 22%;
+            height: 500px;
+        }
+
+        .cardphoto {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(0, 0, 255, 0.4);
+
+        }
+
+        .cardtext {
+            position: relative;
+            margin-top: -80px;
+            width: 100%;
+            height: 250px;
+
+            text-align: center;
+            color: white;
+        }
+        .fa-brands{
+            color: white;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="logotask.png" alt=""></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class=" fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">learn</a></li>
+        <li><a href="#">teach</a></li>
+        <li><a href="#">project</a></li>
+        <li><a href="#">Stats</a></li>
+        <li><a href="#">help US</a></li>
+        <li><a href="#">lncubator</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="mean">
+        <div class="supre">
+            <h1>help students</h1>
+            <h1>become</h1>
+            <h1>superheroes</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <button style="background-color: #44769f;">learn more </button>
+        </div>
+        <div class="second"><h3>every Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, explicabo!</h3></div>
+        <div class="box5">
+            <div class="number" ><h1>2M</h1><p>Lorem, ipsum </p></div>
+            <div class="number"><h1>50M</h1><p>Lorem, ipsum .</p></div>
+            <div class="number number-1"><h1>80m</h1> <p>students on code.</p></div>
+            <div class="number"><h1>30M</h1><p>Lorem ipsum dolor</p></div>
+            <div class="number"><h1>242M</h1><p>Lorem, ipsum </p></div>
+            <!-- <div class="number" style="background-color: #00adbc;"><h1>2M</h1><p>Lorem, ipsum </p><div> -->
+            <!-- <div class="number"><h1>50M</h1><p>Lorem, ipsum .</p></div> -->
+        </div>
+        <div class="third">
+            <div class="cards">
+                <div class="cardphoto"><img style="width: 100%; height: 250px;" src="child-learn.png" alt=""></div>
+                <div class="cardtext" style="background-color:#59cbd3ee ;">
+                    <h3>Hour of code</h3>
+                    <p>Explore,play,and create</p>
+                    <p>Try the Hour of Code</p>
+                    <p>About the Hour of Code</p>
+                    <p>Host an Hour of Code</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cardphoto"><img style="width: 100%; height: 250px;" src="kide.png" alt=""></div>
+                <div class="cardtext" style="background-color:#a69bc1f2 ;">
+                    <h3>Students</h3>
+                    <p>Explore,play,and create</p>
+                    <p>Try the Hour of Code</p>
+                    <p>About the Hour of Code</p>
+                    <p>Host an Hour of Code</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cardphoto"><img style="width: 100%; height: 250px;" src="USA.png" alt=""></div>
+                <div class="cardtext" style="background-color:#59b9dcea ;">
+                    <h3>Educarors</h3>
+                    <p>Explore,play,and create</p>
+                    <p>Try the Hour of Code</p>
+                    <p>About the Hour of Code</p>
+                    <p>Host an Hour of Code</p>
+                </div>
+            </div>
+            
+            <div class="cards">
+                <div class="cardphoto" style="background-image: url(bee.png);">
+    
+                </div>
+                <div class="cardtext" style="background-color:#d1d567e2 ;">
+                    <h3>Get involved
+                    </h3>
+                    <p>Explore,play,and create</p>
+                    <p>Explore,play,and create</p>
+                    <p>Try the Hour of Code</p>
+                    <p>About the Hour of Code</p>
+                    <p>Host an Hour of Code</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; background-color: orange ;color: white;"><h2>over 242 million code.org project created</h2></div>
+        <section>
+            <div  class="lin-img1" style="text-align: center;">
+                <img src="cut-1.png" alt="">
+                <img src="cut-2.png" alt="">
+                <img src="cut-3.png" alt="">
+                <img src="cut-4.png" alt="">
+                <img src="cut-5.png" alt="">
+                <img src="cut-3.png" alt="">
+            
+            </div>
+            <div class="lin-img" style="text-align: center;">
+                <img src="cut-4.png" alt="">
+                <img src="cut-3.png" alt="">
+                <img src="cut-1.png" alt="">
+                <img src="cut-2.png" alt="">
+                <img src="cut-5.png" alt="">
+                <img src="cut-1.png" alt="">
+            </div>
+        </section>
+        <div class="end ">
+            <h2>code.or</h2>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing.</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <button style="width: 70px;height: 25px; background-color: orange;color: white;">Donate</button><br>
+            <h4><a href="#">see more supportse</a></h4>
+        </div>
+        <div>
+            
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+    
+    
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-about">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-github"></i></li>
+
+                            <div class="footer-logo">
+                                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            </div>
+                            <p>The Customer is at the heart of our unique bussiness model, which include design.</p>
+                            <a href="#"><img src="img/payment.png" alt=""></a>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h6>Shopping</h6>
+                            <ul>
+                                <li><a href="#">Clothing Store</a></li>
+                                <li><a href="#">Trending Shoes</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Sale</a></li>
+    
+                            </ul>
+                        </div> -->
+                    </div>
+    
+                    <div class="col-lg-2  col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h6>Links</h6>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <!-- <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Delivary</a></li>
+                                <li><a href="#">Return & Exchanges</a></li> -->
+    
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h6>NewsLetter</h6>
+                            <div class="footer-newslatter">
+                                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                                <form action="#">
+                                    <input type="text" placeholder="Your Email">
+                                    <button type="submit"><span><i class="fa fa-envelope"
+                                                arial-hidden="true"></i></span></button>
+                                </form>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="footer-copyright-text">
+                            <!-- <p>Copyright &copy; 2021 All rights reserved | This template is made with <i class="fa fa-heart-o" arial-hidden="true"></i>
+                                 by <a href="#">CodingWithNick</a></p> -->
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+        </footer>
+    </div>
+   
+
+  </body>
+</html>

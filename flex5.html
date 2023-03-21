@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+.content img {
+    width: 70px;
+    height: 50px;
+  margin-right: 10px;
+  display: block;
+}
+
+.content h3,
+.content p {margin: 0;}
+.box{
+  /* flex-wrap:wrap ; */
+        display: flex;
+        background-color: rgb(200, 166, 122);
+        height: 800px;
+        width: 1450px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box1{
+        display: flex;
+        background-color: white;
+        height: 400px;
+        width: 500px;
+        border-radius: 20px;
+        flex-direction: column;
+
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="content">
+                <img src="https://img.icons8.com/ios-glyphs/1x/user-male.png" >
+                <div class="text">
+                  <h3><strong>User#1</strong></h3>
+                  <p>Amman,jordan</p>
+                </div>
+              </div>
+              <div class="content">
+                <img src="https://img.icons8.com/ios-glyphs/1x/user-male.png" >
+                <div class="text">
+                  <h3><strong>User#2</strong></h3>
+                  <p>Amman,jordan</p>
+                </div>
+              </div>
+              <div class="content">
+                <img src="https://img.icons8.com/ios-glyphs/1x/user-male.png" >
+                <div class="text">
+                  <h3><strong>User#3</strong></h3>
+                  <p>Amman,jordan</p>
+                </div>
+              </div>
+              <div class="content">
+                <img src="https://img.icons8.com/ios-glyphs/1x/user-male.png" >
+                <div class="text">
+                  <h3><strong>User#4</strong></h3>
+                  <p>Amman,jordan</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

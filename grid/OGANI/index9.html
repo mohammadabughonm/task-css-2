@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/3d0e11c16d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_2</title>
+    <style>
+        .container {
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e5f5fa;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #448aff;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            margin-top: -1px;
+            fill: white;
+            color: white;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .list svg {
+            fill: white;
+            width: 15px;
+            height: 15px;
+            margin-top: 8px;
+        }
+
+        .logo svg {
+            margin-bottom: 25px;
+            padding-left: 10px;
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .list {
+            width: 50%;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .up {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .divs svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .divs {
+            background-color: rgba(0, 0, 0, 0.259);
+            width: 380px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            gap: 1px;
+        }
+
+        .grid-item1 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white;
+
+        }
+
+        .divs1 {
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 45% 45%;
+            row-gap: 19px;
+            background-color: #e5f5fa;
+            column-gap: 0px;
+        }
+
+        .divs1 svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .div1 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .in{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 650px;
+            height: 200px;
+            background-color: white;
+        }
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+        .divin{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: 70px 40px 70px;
+            width: 450px;
+            gap: 5%;
+        }
+        .div6{
+            background-color: white;
+        }
+        .down{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            gap: 10px;
+            width: 100%;
+        }
+        .div4{
+            width: 275px;
+        }
+        
+        @media only screen and (max-width: 805px) {
+            div.divs {
+                width: 95%;
+            }
+            table{
+                width: 450px;
+            }
+            div.divin{
+                width: 95%;
+            }
+        }
+
+        @media only screen and (max-width: 495px) {
+            div.navbar {
+                fill: white;
+                display: flex;
+                width: 20px;
+                height: 20px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+            table{
+                width: 350px;
+            }
+
+            div.list {
+                display: none;
+            }
+
+            div.logo svg {
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M168 32H24C10.7 32 0 42.7 0 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79L81 335 41 295c-6.9-6.9-17.2-8.9-26.2-5.2S0 302.3 0 312V456c0 13.3 10.7 24 24 24H168c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H424c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H280c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S177.7 32 168 32z" />
+                </svg></div>
+            <div class="list">
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                        </svg></li>
+                    <li><img src="img/prof.PNG" alt="" style="border-radius: 30px; height: 40px;"></li>
+                    <li>John Doe <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg></li>
+                </ul>
+            </div>
+            <div class="navbar"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg></div>
+        </div>
+        <div class="up">
+            <div class="divs">
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>10k</h4>
+                        <p>vistores</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>200+</h4>
+                        <p>files</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>100%</h4>
+                        <p>volume</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>120</h4>
+                        <p>mails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divs">
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>1000</h4>
+                        <p>shear</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>350</h4>
+                        <p>returns</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>600</h4>
+                        <p>network</p>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="in-item1"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                        </svg></div>
+                    <div class="in-item1">
+                        <h4>100%</h4>
+                        <p>connections</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divs divs1">
+                <div class="div1" style="background-color: #11c15b;">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                    </svg>
+                </div>
+                <div class="div1" style="background-color: #32ed80;">
+                    <h4>000</h4>
+                    <p>lorem</p>
+                </div>
+                <div class="div1" style="background-color: #448aff;">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                    </svg>
+                </div>
+                <div class="div1" style="background-color: #91baff;">
+                    <h4>000</h4>
+                    <p>lorem</p>
+                </div>
+            </div>
+        </div>
+        <div class="in">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>name</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Lois</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Cleveland</td>
+                        <td>$250</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divin">
+                <div class="div6"><h3>total</h3><p><i class="fa-light fa-arrow-down"></i></p><h5>48% from last 24 hours</h5></div>
+                <div class="div6"><h3>Order status</h3><p><i class="fa-regular fa-arrow-up"></i></p><h5>36% from last 6 months</h5></div>
+                <div class="div6" style="background-color: #ff5252;height: fit-content;" ><h3>489</h3><p>Total comment</p></div>
+                <div class="div6"  style="background-color:#11c15b;height: fit-content;"><h3>$5782</h3><p>income status</p></div>
+                <div class="div6"><h3>total</h3><p><i class="fa-light fa-arrow-down"></i></p></div>
+                <div class="div6"><h3>total</h3><p><i class="fa-light fa-arrow-down"></i></p></div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="div4">
+                <p>lorem</p>
+                <h3>000000</h3>
+                <input type="range" name="" id="">
+            </div>
+            <div class="div4">
+                <p>lorem</p>
+                <h3>000000</h3>
+                <input type="range" name="" id="">
+            </div>
+            <div class="div4">
+                <p>lorem</p>
+                <h3>000000</h3>
+                <input type="range" name="" id="">
+            </div>
+            <div class="div4">
+                <p>lorem</p>
+                <h3>000000</h3>
+                <input type="range" name="" id="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

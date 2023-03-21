@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+html {
+  font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0 0 1em;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  border: 5px solid #000;
+  height: 4rem;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 30%;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+}
+
+header .title {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0em;
+}
+
+main {
+  padding: 0 1em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 50rem;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.cards li {
+  justify-content: end;
+  border: 5px solid #000;
+  margin-bottom: 1em;
+}
+
+.cards h2 {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.cards .inner {
+  flex-basis: 100%;
+  padding: 0.5em 1em;
+  width: 16rem;
+  height: 10rem;
+}
+
+.sidebar {
+  width: 100%;
+  height: fit-content;
+  background-color: #333;
+  border: 5px solid #000;
+  padding: 0.5em 1em;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.first-cards {
+  display: flex;
+  flex-flow: wrap;
+  /* margin: 0 auto; */
+  max-width: 50rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    width: 22rem;
+  }
+
+  .sidebar {
+    width: 30%;
+    height: 35rem;
+    margin-left: 70%;
+    margin-top: -50%;
+    position: sticky;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  .first-cards {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .first-cards {
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+  <header>
+    <div class="title">My Website</div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Link 1</a>
+        </li>
+        <li>
+          <a href="">Link 2</a>
+        </li>
+        <li>
+          <a href="">Link 3</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <article>
+      <div class="first-cards">
+        <h1>This is the main heading</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        
+      </div>
+
+      <ul class="cards">
+        <li>
+          <h2>Card One</h2>
+          <div class="inner">
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Card Two</h2>
+          <div class="inner">
+            <p>Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Card Three</h2>
+          <div class="inner">
+            <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Card Four</h2>
+          <div class="inner">
+            <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+          </div>
+        </li>
+        <li>
+          <h2>Card Five</h2>
+          <div class="inner">
+            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+          </div>
+        </li>
+
+      </ul>
+    </article>
+    <aside class="sidebar">
+      <p>Have you discovered all of the other excellent content on this website?</p>
+
+    </aside>
+  </main>
+  
+</body>
+</html>

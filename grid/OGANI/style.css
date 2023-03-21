@@ -1,0 +1,157 @@
+.nav{
+    display: grid;
+    grid-template-columns: 80rem 10rem;
+    margin: 1rem;
+    background-color: #f5f5f5;
+    max-width: 100%;
+    height: 2rem;
+}
+.nav1{
+    display: flex;
+    gap: 1rem;
+}
+.nav2{
+    display: flex;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.sec-nav{
+    display: flex;
+    /* background-color: aqua; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 5rem 5rem;
+    height: 3rem;
+    gap: 2rem;
+
+}
+.lift-nav{
+    display: flex;
+    gap: 1rem;
+    /* background-color: #7fad39; */
+}
+.right-nav{
+    margin-right: 1%;
+    display: flex;
+    gap: 1rem;
+    /* background-color: aqua; */
+    /* max-width: 10rem; */
+}
+li{
+    list-style: none;
+    /* display: flex; */
+}
+section{
+    position: relative;
+    /* max-height: 200rem; */
+    /* background-color: aqua; */
+
+}
+.selec-lift{
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    width: 15rem;
+    margin-left: 3rem;
+    border: 1px solid black;
+    text-align: center;
+
+    /* border-radius: 10px; */
+
+
+}
+.selec-right{
+    /* background-color: aqua; */
+    position: absolute;
+    display: flex;
+    margin-top:-21%;
+    margin-left: 50%;
+}
+.selec-main{
+    /* position: absolute; */
+    background-color: aqua;
+    display: flex;
+    -ms-flex-direction: row;
+    margin-top:-20%;
+    margin-left: 20%;
+    background-image: url(banner.jpg);
+    max-width: 1000px;
+    max-height: 2000px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* margin-bottom: 30rem
+    position: relative;
+    margin-right: ; */
+    padding: 10% 10% ;
+
+   
+}
+.img1{
+    /* position: absolute; */
+    margin-bottom:25;
+    padding: 0% 12%;
+    
+
+}
+.selec{
+    height: 20rem;
+    width: 100%;
+}
+#section1{
+    margin-top: 0;
+}
+.fa-bars{
+    /* border: 1px solid black; */
+}
+.head1{
+    color: white;
+    background-color: #7fad39;
+}
+.selecion-main{}
+@media only screen and (max-width: 1200px) {
+
+    .nav{
+        /* max-width: 60rem; */
+        visibility: hidden;
+    }
+    .selec{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 34rem;
+        /* padding: 10%; */
+        /* margin: 10%; */
+        
+    }
+    .img1{
+        visibility: hidden;
+        /* height: 24rem;
+        width: 24rem; */
+    }
+    .selec-lift{
+        /* padding: 5%; */
+        margin: 10%;
+        width: 800px;
+        height: 300px;
+    }
+    img{
+        width: fit-content;
+        height:fit-content;
+        object-fit: cover;
+        
+    }
+    .sec-nav{
+        max-width: 34rem;
+    }
+
+
+
+    
+}
+

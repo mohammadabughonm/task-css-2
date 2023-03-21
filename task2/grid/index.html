@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box{
+        display: grid;
+        width: 1400px;
+        height: 650px;
+        background-color: antiquewhite;
+        grid-template-areas: 
+           'head head head head head head '
+           'midl midl midl midl midr midr'
+           'foot foot foot foot foot foot ';
+           gap: 10px;
+           
+
+             }
+     .head{
+        grid-area: head;
+        background-color: blue;
+        height: 100px;
+     }
+     .midr{
+        grid-area: midr;
+        background-color: red;
+        height: 300px;
+        
+     }
+     .midl{
+        grid-area: midl;
+        background-color: yellow;
+        height: 300px;
+     }
+     .foot{
+        grid-area: foot;
+        background-color: blueviolet;
+        height: 250px;
+     }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="head"></div>
+        <div class="midl"></div>
+        <div class="midr"></div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>

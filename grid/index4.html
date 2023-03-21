@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container1{
+            display: grid;
+            width: 100%;
+            height: 500px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+
+        }
+        .image1{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background-image: url(call-phone);
+            background-color: rgb(54, 54, 197);
+            background-repeat: no-repeat;
+            background-position: contain;
+            color: orange;
+            padding: 7%;
+            font-size: 1.5em;
+        }
+        .container2{
+            display: grid;
+            height: 200px;
+            width: 100%;
+            background-color: rgb(211, 205, 205);
+            grid-template-columns: repeat(5,1fr);
+            column-gap: 5px;
+        }
+        .image2{
+            margin: auto;
+            border: outset;
+            width: 80%;
+            height: 70px;
+            color: black;
+            background-color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container1">
+       <div class="image1">
+            offers & services 
+            <h1 style="width: 40%;">Offers and Services</h1>
+            <h2 style="color: rgb(203, 72, 11); width: 50%;">Stay connected to people in your life</h2>
+            <h5 style="color:  rgb(203, 72, 11);width: 55%;">Best 4G+ and Unlimmited Internet bundels and features with Orange Mobile Lines</h5>
+       </div>
+               <div style="background-image:url(family-orange.jpg);background-size: cover;">
+            
+            </div>
+               <div style="background-image: url(green-.jpg);background-size: cover;color: white;">
+                <h1>Orange Extra</h1>
+                <p>Enjoy the ultimate experience of lifestyle & leisure with your orange subsctription</p>
+                <div >
+                <br><br><br>
+                ______
+                 <h3>Explore More</h3>
+                </div>
+            </div>
+               <div style="background-image: url(Oranges.webp);color: white;">
+                <h1>Smart Life</h1>
+                <p>Wide selection of smart Life devices to make your life easier from orange</p>
+                <div >
+                <br><br><br>
+                ______
+                 <h3>Explore More</h3>
+                </div>
+
+            </div>
+               <div style="background-image:url(call-phone.jpg);background-size: cover;"></div>
+    </div>
+    <div class="container2">
+        <div class="image2" style="background-color: orange;color: white;"> 
+            <img src="https://img.icons8.com/ios-glyphs/256/two-smartphones.png" style="width: 20%;" >
+           
+ <span style="font-size: 1.5em;width: 20%;">Mobile offer  </span>
+        </div>
+
+        <div class="image2">
+            <img src="https://img.icons8.com/ios/256/refusing.png" height="40xp" width="40px">
+        Internet offers
+        </div>
+        <div class="image2">
+            <img src="https://img.icons8.com/external-basicons-solid-edtgraphics/1x/external-Devices-computers-and-accessories-basicons-solid-edtgraphics.png" >
+            <span style="font: size 1.5em;;width: 20%;">Devices </span>
+        </div>
+        <div class="image2">
+            <img src="https://img.icons8.com/ios-filled/1x/airplane-take-off.png">
+            <span style="width: 20%;">International & airplane </span>
+        </div>
+        <div class="image2">
+            <img src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/256/external-telephone-contact-us-xnimrodx-lineal-xnimrodx.png" height="40px"width="40xp">
+            <span style="font-size: 1.5em;width: 20%;">Fixed Lines</span>
+        </div>
+    </div>
+</body>
